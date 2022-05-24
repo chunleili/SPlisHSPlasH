@@ -173,6 +173,7 @@ namespace SPH
     /** \brief Class to manage the current simulation time and the time step size. 
     * This class is a singleton.
     */
+   //REFACTOR 反模式：上帝类。同时文件太大职责太多，应该把不必要的职责分出去。
     class Simulation : public GenParam::ParameterObject
     {
     public:

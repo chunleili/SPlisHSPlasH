@@ -245,6 +245,7 @@ namespace SPH
 			inline std::vector<unsigned int>& get_precomputed_indices_same_phase() { return m_precompIndicesSamePhase; }
 #endif
 
+//REFACTOR: 太多get set函数是僵尸代码从未用过。
 			FORCE_INLINE Vector3r &getPosition0(const unsigned int i)
 			{
 				return m_x0[i];
