@@ -112,7 +112,7 @@ fonts_dest = 'resources/fonts' if platform.system() == "Windows" else 'bin/resou
 
 # Get Readme text for long description
 cur_dir = os.path.abspath(os.path.dirname(__file__))
-with open(os.path.join(cur_dir, "README.md"), 'r') as f:
+with open(os.path.join(cur_dir, "README.md"), 'r', encoding="utf-8") as f:
     long_description = f.read()
 	
 # read version	
